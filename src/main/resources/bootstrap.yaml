@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bootcamp-gateway
+  cloud:
+    config:
+      enabled: true
+      label: master
+      uri: http://localhost:7000
+
+
+
+
