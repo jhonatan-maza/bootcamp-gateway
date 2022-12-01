@@ -8,7 +8,7 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>bootcamp-gateway</groupId>
+	<groupId>com.nttdata.bootcamp</groupId>
 	<artifactId>bootcamp-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bootcamp-gateway</name>
