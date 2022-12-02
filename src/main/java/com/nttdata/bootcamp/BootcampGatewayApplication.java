@@ -32,8 +32,8 @@ public class BootcampGatewayApplication {
 		List<GroupedOpenApi> groups = new ArrayList<>();
 		List<RouteDefinition> definitions = locator.getRouteDefinitions().collectList().block();
 		assert definitions != null;
-		definitions.stream().filter(routeDefinition -> routeDefinition.getId().matches("bootcamp-customer")).forEach(routeDefinition -> {
-			String name = routeDefinition.getId().replaceAll("bootcamp-customer", "bootcamp-customer");
+		definitions.stream().filter(routeDefinition -> routeDefinition.getId().matches(".*")).forEach(routeDefinition -> {
+			String name = routeDefinition.getId().replaceAll("bootcamp-", "");
 			groups.add(GroupedOpenApi.builder().pathsToMatch("/" + name + "/**").group(name).build());
 		});
 		return groups;
